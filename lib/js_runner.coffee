@@ -13,12 +13,6 @@ module.exports = class JsRunner
 #      console.log "script code: #{code}"
       @run(code, cb)
 
-  # loads a script into the sandbox. Useful for loading libraries.
-#  loadScript: (path, cb) ->
-#    @readScript path, (code) =>
-##      console.log "script code: #{code}"
-#      @exec(code, cb)
-
   # reads contents out of a file
   readScript: (path, cb) ->
     fs.readFile "./scripts/#{path}", 'utf8', (err, data) =>
