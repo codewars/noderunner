@@ -1,0 +1,5 @@
+# create the gemset if it does not exist
+rvm_gemset_create_on_use_flag=1
+# switch to default ruby version when exiting directory
+rvm_project_rvmrc_default=1
+rvm ruby 2.0.0
